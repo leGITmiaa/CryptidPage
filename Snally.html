@@ -1,0 +1,215 @@
+ <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title> Snallygaster </title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    
+    <div class="content">
+
+        <a href="index.html" class="home-button"> ← HOME</a>
+
+        <h1 class="name1">Snallygaster</h1>
+
+        <div class="info-box">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshfXXxTVR7bRBSjgP2p_lNq78Cj8AddrfNU4J6LuvP2VIrXVY3DTFIF8&s=10" alt="Snallygaster">
+
+            <h3>Information</h3>
+
+            <p><b>Type:</b> Shapeshifting hybrid of bird and reptile. </p>
+            <p><b>Origin:</b> Appalachia </p>
+            <p><b>Threat Level:</b> High </p>
+            <p><b>Habitat:</b> Nests in deep mountain caves and dark valleys. </p> 
+
+        </div>
+
+        <h2>Overview</h2>
+
+        <p>
+           The Snallygaster is a legendary, dragon-like cryptid from Maryland and Appalachian folklore. Traditionally, 
+           the beast is described as a terrifying half-bird, half-reptile with massive wings, a metallic beak, sharp teeth,
+            and octopus-like tentacles. It was said to swoop silently from the skies to prey on livestock and humans.
+        </p>
+
+        <h2>Appearance</h2>
+
+        <p>
+            <b>Head:</b> Metallic beak lined with sharp teeth and a single eye mid-forehead.
+            <b>Body:</b> Enormous leathery wings, alligator skin, and steel-like claws.
+            <b>Tentacles:</b> Octopus-like appendages used to snatch up its prey.
+            <b>Sound:</b> Emits a screech like a locomotive whistle.
+        </p>
+
+        <h2>Habitat</h2>
+
+        <p>
+           Nestled in the Blue Ridge Mountains of Maryland.
+           <b>Hotspots:</b> Concentrated in Frederick, Washington, and Carroll counties.
+        </p>
+
+        <h2>Reported sightings</h2>
+
+        <ul>
+            <li>The legend exploded in popularity in February and March 1909,
+                 when local newspapers like the Middletown Valley Register began running sensational articles about
+                 a beast terrorizing the countryside. </li>
+        </ul>
+
+        <h2>Theories</h2>
+
+        <p>
+           <ul>
+            <li> The most widely accepted theory is that 1730s German immigrants brought tales of a Schneller Geist ("quick spirit") 
+                to Maryland. Over time, oral storytelling warped the intangible ghost into a physical, blood-sucking dragon. </li>
+           </ul>
+        </p>
+
+        <h2>Related Cryptids</h2>
+
+        <ul>
+            <li><a href="htmlGrootslang"> Grootslang </a></li>
+        </ul>
+
+
+
+    </div>
+
+
+
+<style>
+
+    body {
+        background-color: black;
+    }
+
+    .content {
+        margin-left: 100px;
+        padding: 30px;
+    }
+
+    .content h1 {
+        color: #947268;
+    }
+
+    .content p {
+        color: aliceblue;
+    }
+
+    .content h2 {
+        border-bottom: 2px solid #947268;
+        padding-bottom: 5px;
+        color: #74070e;
+    }
+
+    .info-box {
+        float: right;
+        width: 500px;
+        height: 600px;
+        background-color: #1f1f1f;
+        border: 2px solid #74070e;
+        padding: 15px;
+        margin-left: 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+    .info-box img {
+        width: 64%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+
+    .content ul {
+        color: aliceblue;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+    a:hover {
+        color: #947268;
+    }
+
+
+
+body.light {
+    background-color: aliceblue;
+    color: #1f1f1f;
+    font-size: 17px;
+}
+ 
+body.light .info-box {
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+}
+
+body.light .content p{
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+body.light .content a {
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+body.light .content ul {
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+
+.frijole-regular {
+  font-family: "Frijole", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.name1{
+    font-family: Frijole;
+}
+
+
+
+</style>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button = document.getElementById("themeToggle");
+
+    if(localStorage.getItem("theme") === "light"){
+        document.body.classList.add("light");
+    }
+
+    button.addEventListener("click", () => {
+
+        document.body.classList.toggle("light");
+
+        if(document.body.classList.contains("light")){
+            localStorage.setItem("theme", "light");
+        }else{
+            localStorage.setItem("theme", "dark");
+        }
+    });
+});
+
+
+
+</script>
+</body>
+</html>

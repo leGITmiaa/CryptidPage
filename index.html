@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Home Page</title>
+    <link rel='stylesheet' href='web.css'>
+    <script src='web.js' defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+<button id="themeToggle">Light/Dark</button>
+
+
+
+
+
+
+<div class="contentC">
+
+<div class="menu">
+
+    <button class="collapse-btn">
+        South Africa
+    </button>
+
+   <div class="contentB">
+    <p><a href="Grootslang.html"> Grootslang </a></p>
+    <p><a href="Tokoloshe.html"> Tokoloshe </a></p>
+   </div>
+
+   <button class="collapse-btn">
+    America
+   </button>
+
+   <div class="contentB">
+    <p><a href="Mothman.html">Mothman</a></p>
+    <p><a href="Bigfoot.html">Bigfoot</a></p>
+   </div>
+
+   <button class="collapse-btn">
+    Indonesia
+   </button>
+
+   <div class="contentB">
+    <p><a href="Ahool.html"> Ahool </a></p>
+    <p><a href="Orang.html"> Orang Pendek </a></p>
+   </div>
+
+   <button class="collapse-btn">
+    Appalachia
+   </button>
+
+   <div class="contentB">
+    <p><a href="Snally.html"> Snallygaster </a></p>
+    <p><a href="Wampus.html"> Wampus Cat</a></p>
+   </div>
+
+
+
+</div>
+
+
+
+
+     <!--sidebar-->
+    <div class="sidebar">
+        <h2>Cryptidpedia</h2>
+
+
+
+        <a href="Bigfoot.html">Bigfoot</a>
+        <a href="Mothman.html">Mothman</a>
+        <a href="Tokoloshe.html">Tokoloshe</a>
+        <a href="Grootslang.html">Grootslang</a>
+        <a href="Orang.html">Orang Pendek</a>
+        <a href="Ahool.html">Ahool</a>
+        <a href="Snally.html"> Snallygaster</a>
+        <a href="Wampus.html"> Wampus Cat </a>
+    </div>
+
+    <!--main content-->
+    <div class="content">
+
+        <header>
+            <h1 class="header1">CRYPTIDPEDIA</h1>
+            <p class="mainP">The Online Cryptid Encyclopedia</p>
+        </header>
+
+
+        <!--search bar-->
+        <div class="search-box">
+            <input
+                   id="searchBox"
+                   placeholder="Search Cryptids...">
+
+        <button onclick="SearchCryptids()">
+            Search
+        </button>
+        </div>
+
+        
+        <!--featured content-->
+        <div class="featured">
+            <h2>Featured Cryptids Of The Week</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxWBDtKGAWBOIkvNB_wNGH9lW6NJbUhTGIUWTKr-_s5eW6MjfiLYkabQ&s=10" alt="Wampus Cat">
+
+            <h3 class="feauturedh3">The Wampus Cat</h3>
+
+            <p> A fierce, six-legged, cat-like beast from Cherokee and Appalachian folklore that stalks
+            the woodlands of East Tennessee and Kentucky. </p>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+    <style>
+
+
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+    }
+
+    /* side bar */
+    .sidebar {
+        width: 220px;
+        height: 100vh;
+        background-color: #1f1f1f;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        padding: 20px;
+    
+
+    }
+
+    .sidebar h2 {
+        color: #74070e;
+    }
+
+    .sidebar a {
+        display: block;
+        color: azure;
+        text-decoration: none;
+        margin: 15px 0;
+    }
+    .sidebar a:hover {
+        color: #947268;
+    }
+
+    /*main content*/
+    .content {
+        margin-left: 260px;
+        padding: 30px;
+    }
+
+    /*header*/
+    header h1 {
+        margin-bottom: 5px;
+    }
+    header p {
+        color: #bdbdbd;
+    }
+
+    /* search*/
+    .search-box {
+        margin: 30px 0;
+    }
+
+    .search-box input {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .search-box button {
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    /*featured section*/
+    .featured {
+        background-color: #1f1f1f;
+        padding: 28px;
+    
+    
+    border-width: 10px;
+    border-radius: 10px;
+    border-image: linear-gradient(rgb(93, 2, 2),rgb(206, 10, 42),rgb(134, 4, 4)) 1 /20px;
+  
+
+    }
+
+    .featured img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+
+    button {
+        box-shadow: 0 0 5px rgb(199, 40, 40),
+        0 0 25px rgb(199, 40, 40);
+    }
+
+    button:hover {
+        box-shadow: 0 0 5px rgb(199, 40, 40),
+        0 0 25px rgb(199, 40, 40), 0 0 50px rgb(199, 40, 40),
+        0 0 50px rgb(199, 40, 40), 0 0 50px rgb(199, 40, 40);
+    }
+
+body{
+    font-family: Arial;
+    background:#222;
+    color:white;
+}
+
+
+
+body.light {
+    background-color: #fafaff;
+    color: #121212;
+}
+
+body.light .sidebar {
+    background-color: #cacbcd;
+}
+
+
+body.light .headerp {
+    color: #1f1f1f;
+
+}
+
+body.light .featured {
+    color: black;
+    background-color: #cacbcd;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 9999;
+    background-color: #b3b9c1;
+    color: aliceblue;
+}
+
+body.light .collapse-btn {
+    background-color: #b3b9c1;
+    color: #333;
+}
+
+
+body.light .contentB{
+    background-color: #666;
+
+}
+
+body.light .mainP{
+    color: #444;
+}
+
+body.light .featured{
+    border: #1c1c1c 2px solid;
+}
+
+body.light .sidebar{
+    border: #1c1c1c 2px outset;
+}
+
+body.light .sidebar a{
+    color: #121212;
+}
+
+body.light .sidebar a:hover{
+    color: #947268
+}
+
+.menu{
+    width:300px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+.collapse-btn{
+    width:100%;
+    padding:15px;
+    text-align:left;
+    font-size:18px;
+    cursor:pointer;
+    background:#444;
+    color:white;
+    border:none;
+    margin-top:5px;
+}
+
+.collapse-btn:hover{
+    background:#666;
+}
+
+.contentB{
+    display: none; /*this is important as it begins by hinding the content */
+    padding:10px;
+    background:#333;
+} 
+
+
+a {
+    color: aliceblue;
+}
+
+
+.frijole-regular {
+  font-family: "Frijole", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header1{
+    font-family: Frijole;
+}
+
+.feauturedh3{
+    font-family: Frijole;
+    size: 20px;
+}
+
+</style>
+
+<script>
+
+/*theme button*/
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button = document.getElementById("themeToggle");
+
+    if(localStorage.getItem("theme") === "light"){
+        document.body.classList.add("light");
+    }
+
+    button.addEventListener("click", () => {
+
+        document.body.classList.toggle("light");
+
+        if(document.body.classList.contains("light")){
+            localStorage.setItem("theme", "light");
+        }else{
+            localStorage.setItem("theme", "dark");
+        }
+    });
+});
+
+
+/*collapse button*/
+const buttons = document.querySelectorAll(".collapse-btn");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        const content = this.nextElementSibling;
+
+        if(content.style.display === "block"){
+            content.style.display = "none";
+        }else{
+            content.style.display = "block";
+        }
+    });
+});
+
+</script>
+
+
+</body>
+</html>
