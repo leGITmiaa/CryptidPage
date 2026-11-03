@@ -1,0 +1,207 @@
+  <html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='jsWeb' defer></script>
+    <title> Tokoloshe </title>
+    <script src='jsWeb' defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+   
+
+</head>
+
+<body>
+    
+    <div class="content">
+
+        <a href="htmlMain" class="home-button"> ← HOME</a>
+
+        <h1 class="name1">Tokoloshe</h1>
+
+        <div class="info-box">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjWwIMJmKXBdACxxO3OQ7N8bO6qQTkMStWXQbNPE7llNcrNeEjhqUTXKk&s=10" alt="Tokoloshe">
+
+            <h3>Information</h3>
+
+            <p><b>Type:</b> Dwarf-like creature </p>
+            <p><b>Origin:</b> South Africa </p>
+            <p><b>Threat level:</b> EXTREME</p>
+            <p><b>Habitat:</b> Water related places </p>
+
+        </div>
+
+        <h2>Overview</h2>
+
+        <p>
+            The Tokoloshe (or Tikoloshe) is a mischievous, Dwarf-like water spirit, it is believed to be summoned by witches or malevolent
+            people to cause trouble, inflict illness, or even bring death to enemies.
+        </p>
+
+        <h2>Appearance</h2>
+
+        <p>
+            Witnesses describe the Tokoloshe as a hairy, gremlin-like being. Typically described as short with coarse hair,
+            wrinkled skin, and glowing eyes.
+        </p>
+
+        <h2>Habitat</h2>
+
+        <p>
+            Deep river pools, reed beds and riverbanks.
+        </p>
+
+        <h2>Reported sightings</h2>
+
+        <ul>
+            <li>There is no "first sighting" date recorded.</li>
+            <li>Modern sightings continue today</li>
+        </ul>
+
+        <h2>Theories</h2>
+
+        <p>
+            Beyond folklore, the Tokoloshe serves as a way to explain misfortune, unresolved crimes or illness whithin a community.
+        </p>
+
+        <h2>Related Cryptids</h2>
+
+        <ul>
+            <li><a href="htmlGrootslang">Grootslang</a></li>
+        </ul>
+
+
+
+    </div>
+
+
+
+<style>
+
+    body {
+        background-color: black;
+    }
+
+    .content {
+        margin-left: 100px;
+        padding: 30px;
+    }
+
+    .content h1 {
+        color: #947268;
+    }
+
+    .content p {
+        color: aliceblue;
+    }
+
+    .content h2 {
+        border-bottom: 2px solid #947268;
+        padding-bottom: 5px;
+        color: #74070e;
+    }
+
+    .info-box {
+        float: right;
+        width: 500px;
+        height: 600px;
+        background-color: #1f1f1f;
+        border: 2px solid #74070e;
+        padding: 15px;
+        margin-left: 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+    .info-box img {
+        width: 60%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+
+    .content ul {
+        color: aliceblue;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
+    a:hover {
+        color: #947268;
+    }
+
+
+body.light {
+    background-color: aliceblue;
+    color: #1f1f1f;
+    font-size: 17px;
+}
+ 
+body.light .info-box {
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+}
+
+body.light .content p{
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+body.light .content a {
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+body.light .content ul {
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+
+.frijole-regular {
+  font-family: "Frijole", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.name1{
+    font-family: Frijole;
+}
+
+
+
+</style>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button = document.getElementById("themeToggle");
+
+    if(localStorage.getItem("theme") === "light"){
+        document.body.classList.add("light");
+    }
+
+    button.addEventListener("click", () => {
+
+        document.body.classList.toggle("light");
+
+        if(document.body.classList.contains("light")){
+            localStorage.setItem("theme", "light");
+        }else{
+            localStorage.setItem("theme", "dark");
+        }
+    });
+});
+
+
+
+
+</script>
+</body>
+</html>
